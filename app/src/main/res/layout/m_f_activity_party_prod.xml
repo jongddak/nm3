@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".M_F_party_prod_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:hint="가게명"
+            android:inputType="text"
+            android:maxLength="10"
+            android:imeOptions="actionDone"
+            android:textSize="16pt"
+            android:id="@+id/M_V_pp_store"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <Button
+                android:layout_width="40pt"
+                android:layout_height="60dp"
+                android:layout_marginRight="5pt"
+                android:textSize="10pt"
+                android:id="@+id/M_V_pp_create_btn"
+                android:text="생성"/>
+        </LinearLayout>
+
+    </LinearLayout>
+<!--↑ 상단바-->
+<!--↓ 본문-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="15"
+                android:imeOptions="actionDone"
+                android:textSize="10pt"
+                android:hint="파티명을 입력해주세요."
+                android:gravity="center"
+                android:id="@+id/M_V_pp_name"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/category"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginTop="5pt"
+                    android:layout_marginBottom="2pt"
+                    android:textSize="8pt"
+                    android:text="1. 배달업체 선정"/>
+                
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/M_V_pp_platform_select">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="14pt"
+                        android:layout_marginLeft="5pt"
+                        android:textSize="7pt"
+                        android:id="@+id/M_V_pp_pf_radio_bm"
+                        android:text="배달의민족"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="14pt"
+                        android:layout_marginLeft="5pt"
+                        android:textSize="7pt"
+                        android:id="@+id/M_V_pp_pf_radio_yo"
+                        android:text="요기요"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="14pt"
+                        android:layout_marginLeft="5pt"
+                        android:textSize="7pt"
+                        android:id="@+id/M_V_pp_pf_radio_cu"
+                        android:text="쿠팡이츠"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginTop="12pt"
+                    android:layout_marginBottom="2pt"
+                    android:textSize="8pt"
+                    android:text="2. 인원"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1pt">
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:textSize="7pt"
+                        android:text="1명"
+                        android:id="@+id/M_V_pp_pn_1"/>
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:textSize="7pt"
+                        android:text="2명"
+                        android:id="@+id/M_V_pp_pn_2"/>
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:textSize="7pt"
+                        android:text="3명"
+                        android:id="@+id/M_V_pp_pn_3"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1pt">
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:textSize="7pt"
+                        android:text="4명"
+                        android:id="@+id/M_V_pp_pn_4"/>
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:textSize="7pt"
+                        android:text="5명"
+                        android:id="@+id/M_V_pp_pn_5"/>
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:textSize="7pt"
+                        android:text="6명"
+                        android:id="@+id/M_V_pp_pn_6"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginTop="12pt"
+                    android:layout_marginBottom="2pt"
+                    android:textSize="8pt"
+                    android:text="3. 주문시간"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2pt"
+                    android:gravity="center"
+                    android:textSize="6pt"
+                    android:text="1) 언제 먹을까요?"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="8pt"
+                        android:text="오늘"
+                        android:id="@+id/M_V_pp_date_today"/>
+
+                    <Button
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="8pt"
+                        android:layout_marginLeft="5dp"
+                        android:text="내일"
+                        android:id="@+id/M_V_pp_date_tomorrow"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10pt">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2pt"
+                        android:gravity="center"
+                        android:textSize="6pt"
+                        android:text="2) 몇시에 먹을까요?"/>
+
+                    <TimePicker
+                        android:layout_width="330dp"
+                        android:layout_height="155dp"
+                        android:timePickerMode="spinner"
+                        android:id="@+id/M_V_pp_date_TimePicker"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginTop="5pt"
+                    android:layout_marginBottom="2pt"
+                    android:textSize="8pt"
+                    android:text="4. 오픈 채팅방 링크"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="10pt"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:id="@+id/M_V_pp_openchat"
+                    android:hint="링크를 복사하여 붙여넣어주세요."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginTop="5pt"
+                    android:layout_marginBottom="2pt"
+                    android:textSize="8pt"
+                    android:text="5. 만날 장소"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <fragment
+                        android:layout_width="match_parent"
+                        android:layout_height="180pt"
+                        android:name="com.naver.maps.map.MapFragment"
+                        android:id="@+id/M_V_pp_map"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10pt"
+                    android:layout_marginBottom="10pt">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:layout_marginBottom="2pt"
+                        android:textSize="8pt"
+                        android:text="6. 결제 방법"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/M_V_pp_pay_select">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="14pt"
+                            android:layout_marginLeft="5pt"
+                            android:textSize="7pt"
+                            android:id="@+id/M_V_pp_pay_gather"
+                            android:text="모여서 후결제"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="14pt"
+                            android:layout_marginLeft="5pt"
+                            android:textSize="7pt"
+                            android:id="@+id/M_V_pp_pay2_meet"
+                            android:text="파티장 선결제"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="14pt"
+                            android:layout_marginLeft="5pt"
+                            android:textSize="7pt"
+                            android:id="@+id/pay_3"
+                            android:enabled="false"
+                            android:text="모아서 선결제"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/purple_200">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:id="@+id/M_V_pp_order"
+            android:text="선택내역 표시"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
