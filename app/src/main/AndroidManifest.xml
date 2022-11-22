@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     //노도균 살빠지는 주파수
+    // 주파수는 실존한다!!
 
     <application
         android:allowBackup="true"
