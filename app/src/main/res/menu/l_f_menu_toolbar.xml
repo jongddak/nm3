@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--툴바 왼쪽에 있는 아이콘 설정-->
+
+    <item
+        android:id="@+id/item1"
+        android:enabled="true"
+        android:title="메뉴1"
+        android:icon="@drawable/l_f_icon_home"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/item2"
+        android:enabled="true"
+        android:icon="@drawable/l_f_icon_feed"
+        android:title="메뉴2"
+        app:showAsAction="always"/>
+
+
+
+</menu>
