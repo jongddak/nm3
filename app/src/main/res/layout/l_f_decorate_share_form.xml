@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".F_F_main_form_Activity">
+    <!--너나묵자 클릭시 뜨는 화면-->
+    <!--java파일은 xml명과 동일한 녀석들-->
+    <include
+        layout="@layout/l_f_toolbar_share" />
+    <FrameLayout
+        android:id="@+id/fragmentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15sp"
+        android:backgroundTint="#F783DAD6"
+        android:src="@drawable/l_f_icon_add"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="15sp"
+        android:src="@drawable/l_f_icon_user"
+        android:visibility="invisible"
+        app:backgroundTint="#FFFFFF"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+    <!-- pressedTranslationZ:버튼클릭시 그림자 범위
+        elevation:액티비티 바닥부터 버튼까지의 높이
+         visibility:뷰의 가시성 상태 부여(visible:화면에 보이는상태
+                invisible : 화면엔 안보이지만 레이아웃 자리는 차지하고 있는 상태
+                 gone : 완전히 숨겨진 상태-->
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="165dp"
+        android:layout_marginRight="15sp"
+        android:src="@drawable/l_f_icon_settings"
+        android:visibility="invisible"
+        app:backgroundTint="#FFFFFF"
+        app:elevation="12dp"
+        app:pressedTranslationZ="12dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

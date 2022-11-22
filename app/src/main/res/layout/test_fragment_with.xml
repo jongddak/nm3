@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--같이먹자 페이지에서 툴바랑 플로팅 버튼 제외하고 배경 화면-->
+    <!--java파일은 xml명과 동일한 녀석들-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="같이먹는 페이지 입니둥~!"
+        android:textSize="50sp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

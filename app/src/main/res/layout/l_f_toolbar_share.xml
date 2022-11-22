@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    app:title="."
+    android:elevation="30dp"
+    app:titleTextColor="#00FFFFFF"
+    android:background="#b09cdd"
+    app:menu="@menu/l_f_menu_toolbar">
+    <!--너나묵자 툴바-->
+    <!--java파일은 xml명과 동일한 녀석들-->
+    <TextView
+
+        android:id="@+id/F_V_main_share_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff0000"
+        android:text="너나묵자"
+        android:fontFamily="@font/l_f_binggraebold"
+        android:textColor="@color/white"
+        android:transitionName="nonatxTransition"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+    <!--android:includeFontPadding="false"-->
+    <!--background를 투명하게 하면 애니매이션이 자세히 안나옴.-->
+</androidx.appcompat.widget.Toolbar>
