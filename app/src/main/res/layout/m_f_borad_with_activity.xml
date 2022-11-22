@@ -6,9 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".M_F_Borad_with_Activity">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 같이먹는 페이지 입니둥~!"
+        android:textSize="50sp"
+        android:layout_gravity="center"/>
     <ListView
         android:id="@+id/M_V_board_with_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></ListView>
-
+    </FrameLayout>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.cap3;
+package com.example.realnona2;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,8 +15,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.cap3.fragment.FragmentShare;
-import com.example.cap3.fragment.FragmentWith;
+import com.example.realnona2.fragment.FragmentShare;
+import com.example.realnona2.fragment.FragmentWith;
+import com.example.realnona2.fragment.FragmentWith;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class F_F_main_form_Activity extends AppCompatActivity implements View.OnClickListener {
@@ -46,7 +47,7 @@ public class F_F_main_form_Activity extends AppCompatActivity implements View.On
         F_V_main_share_tx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(F_F_main_form_Activity.this, test_ShareActivity.class);
+                Intent intent = new Intent(F_F_main_form_Activity.this, M_F_Borad_share_Activity.class);
                 //건너갈 액티비티를 정해둔 인텐트 객체 선언
 
                 Pair[] pairs = new Pair[1];
@@ -67,7 +68,7 @@ public class F_F_main_form_Activity extends AppCompatActivity implements View.On
         F_V_main_with_tx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(F_F_main_form_Activity.this, test_WithActivity.class);
+                Intent intent = new Intent(F_F_main_form_Activity.this, M_F_Borad_with_Activity.class);
                 //건너갈 액티비티를 정해둔 인텐트 객체 선언
 
                 Pair[] pairs = new Pair[1];

@@ -68,7 +68,7 @@ public class F_F_SighUp_form_Activity extends AppCompatActivity {
                             dialog.show();
                             F_V_signup_email.setEnabled(false); //아이디값 고정
                             validate = true; //검증 완료
-                            F_V_signup_pwd_ck_btn.setBackgroundColor(getResources().getColor(R.color.colorGray));
+                            F_V_signup_pwd_ck_btn.setBackgroundColor(getResources().getColor(R.color.gray));
                         }
                         else {
                             dialog = builder.setMessage("이미 존재하는 아이디입니다.").setNegativeButton("확인", null).create();
@@ -78,7 +78,7 @@ public class F_F_SighUp_form_Activity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 };
-                F_Nona_PhP_UserVakudate validateRequest = new F_Nona_PhP_UserVakudate(UserEmail, responseListener);
+                F_F_php_UserVakudate validateRequest = new F_F_php_UserVakudate(UserEmail, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(F_F_SighUp_form_Activity.this);
                 queue.add(validateRequest);
             }

@@ -1,4 +1,4 @@
-package com.example.cap3;
+package com.example.realnona2;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -20,8 +20,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 
 
-import com.example.cap3.fragment.FragmentShare;
-import com.example.cap3.fragment.FragmentWith;
+import com.example.realnona2.fragment.FragmentShare;
+import com.example.realnona2.fragment.FragmentWith;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class test_WithActivity extends AppCompatActivity implements View.OnClickListener {
@@ -30,6 +30,9 @@ public class test_WithActivity extends AppCompatActivity implements View.OnClick
     private Animation fab_open, fab_close,fab_oanim,fab_canim;
     private Boolean isFabOpen = false;
     private FloatingActionButton fab, fab1, fab2;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

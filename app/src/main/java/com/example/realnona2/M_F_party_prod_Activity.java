@@ -1,4 +1,4 @@
-package com.example.capstone;
+package com.example.realnona2;
 
 import androidx.appcompat.app.AppCompatActivity;
 

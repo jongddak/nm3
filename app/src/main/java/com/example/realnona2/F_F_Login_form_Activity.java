@@ -60,7 +60,7 @@ public class F_F_Login_form_Activity extends AppCompatActivity {
                                 String UserName = jsonObject.getString( "UserName" );
 
                                 Toast.makeText( getApplicationContext(), String.format("%s님 환영합니다.", UserName), Toast.LENGTH_SHORT ).show();
-                                Intent intent = new Intent( F_F_Login_form_Activity.this, MainActivity.class );
+                                Intent intent = new Intent( F_F_Login_form_Activity.this, F_F_main_form_Activity.class );
 
                                 intent.putExtra( "UserEmail", UserEmail );
                                 intent.putExtra( "UserPwd", UserPwd );

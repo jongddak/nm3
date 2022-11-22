@@ -1,4 +1,4 @@
-package com.example.cap3;
+package com.example.realnona2;
 
 import androidx.annotation.NonNull;
 
@@ -21,8 +21,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 
 
-import com.example.cap3.fragment.FragmentShare;
-import com.example.cap3.fragment.FragmentWith;
+import com.example.realnona2.fragment.FragmentShare;
+import com.example.realnona2.fragment.FragmentWith;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class test_ShareActivity extends AppCompatActivity implements View.OnClickListener {

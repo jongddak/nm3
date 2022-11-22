@@ -3,9 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/drawable/ic_food.xml" value="0.2265" />
         <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1775" />
         <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/activity_join.xml" value="0.25364583333333335" />
         <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/f_f_activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/f_f_activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/f_f_activity_signup.xml" value="0.22826086956521738" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/l_f_activity_board_sample.xml" value="0.22826086956521738" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/l_f_decorate_share_form.xml" value="0.22826086956521738" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/l_f_decorate_with_form.xml" value="0.22826086956521738" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/l_f_setting_dialog_btn.xml" value="0.23007246376811594" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/l_f_setting_dialog_toggle.xml" value="0.23007246376811594" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/l_f_toolbar_share.xml" value="0.23007246376811594" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/l_f_toolbar_with.xml" value="0.23007246376811594" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/m_f_activity_party_prod.xml" value="0.23007246376811594" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/m_f_borad_share_activity.xml" value="0.23007246376811594" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/m_f_borad_with_activity.xml" value="0.23007246376811594" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/test_activity_createparty.xml" value="0.23007246376811594" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/test_activity_setting.xml" value="0.23007246376811594" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/test_activity_user.xml" value="0.23007246376811594" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/test_fragment_share.xml" value="0.23007246376811594" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/layout/test_fragment_with.xml" value="0.23007246376811594" />
+        <entry key="..\:/ANDHAH/realnona2-master/app/src/main/res/menu/l_f_menu_toolbar.xml" value="0.25364583333333335" />
         <entry key="..\:/app/realnona2/app/src/main/res/layout/activity_join.xml" value="0.3500905797101449" />
         <entry key="..\:/app/realnona2/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/app/realnona2/app/src/main/res/layout/activity_main.xml" value="0.3500905797101449" />

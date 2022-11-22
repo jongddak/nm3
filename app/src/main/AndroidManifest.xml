@@ -4,11 +4,11 @@
     package="com.example.realnona2"
     tools:ignore="ExtraText">
 
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    //노도균 살빠지는 주파수
-    // 주파수는 실존한다!!
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 대략적인 위치의 권한 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -18,21 +18,59 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Realnona2"
+        android:theme="@style/Theme.realnona2"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
+
+
+
         <activity
-            android:name=".MainActivity">
-        </activity>
-        <activity android:name=".F_F_Login_form_Activity"
+            android:name=".F_F_main_form_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".F_F_Login_form_Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".F_F_SighUp_form_Activity"></activity>
+
+        <activity
+            android:name=".F_F_SighUp_form_Activity"/>
+        <activity
+            android:name=".M_F_Borad_share_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".M_F_Borad_with_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".M_F_party_prod_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".test_userActivity"
+            android:exported="false" />
+        <activity
+            android:name=".test_createparty"
+            android:exported="false" />
+        <activity
+            android:name=".test_WithActivity"
+            android:exported="false" />
+        <activity
+            android:name=".test_ShareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.FragmentWith"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".test_settingdialog"
+            android:exported="false" />
+        <activity
+            android:name=".test_settingActivity"
+            android:exported="false" />
+
 
     </application>
 
