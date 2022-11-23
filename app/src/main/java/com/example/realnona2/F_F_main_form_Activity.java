@@ -51,7 +51,7 @@ public class F_F_main_form_Activity extends AppCompatActivity implements View.On
                 //건너갈 액티비티를 정해둔 인텐트 객체 선언
 
                 Pair[] pairs = new Pair[1];
-                pairs[0] = new Pair<View,String>(F_V_main_share_tx,"nonatxTransition");
+                pairs[0] = new Pair<View,String>(F_V_main_share_tx,"L_V_share_txTransition");
                 //액티비티에서 움직일 뷰와 트랜지션이름을 Pair배열에 담아둔다.
 
                 ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(F_F_main_form_Activity.this, pairs);
@@ -65,6 +65,8 @@ public class F_F_main_form_Activity extends AppCompatActivity implements View.On
                 ft1.commit();*/
             }
         });
+
+
         F_V_main_with_tx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,7 +74,7 @@ public class F_F_main_form_Activity extends AppCompatActivity implements View.On
                 //건너갈 액티비티를 정해둔 인텐트 객체 선언
 
                 Pair[] pairs = new Pair[1];
-                pairs[0] = new Pair<View,String>(F_V_main_with_tx,"withtxTransition");
+                pairs[0] = new Pair<View,String>(F_V_main_with_tx,"L_V_with_txTransition");
                 //액티비티에서 움직일 뷰와 트랜지션이름을 Pair배열에 담아둔다.
 
                 ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(F_F_main_form_Activity.this, pairs);

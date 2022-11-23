@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.Toast;
 
 
@@ -46,6 +47,7 @@ public class M_F_Borad_with_Activity extends AppCompatActivity {
     private Boolean isFabOpen = false;
     private FloatingActionButton fab, fab1, fab2;
 
+    private Button create_btn_with;
 
     private ListView M_V_board_with_list;
     String mTitle[]={"브리또","상호명","상호명","상호명","상호명","상호명","상호명","상호명","상호명"};//listview에 title부분 설정
@@ -57,6 +59,8 @@ public class M_F_Borad_with_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.m_f_borad_with_activity);
+
+        create_btn_with = findViewById(R.id.create_btn_with);
 
         M_V_board_with_list =(ListView)findViewById(R.id.M_V_board_with_list);
 
@@ -84,6 +88,23 @@ public class M_F_Borad_with_Activity extends AppCompatActivity {
         fab.setOnClickListener((View.OnClickListener) this);
         fab1.setOnClickListener((View.OnClickListener) this);
         fab2.setOnClickListener((View.OnClickListener) this);
+
+
+        create_btn_with.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(M_F_Borad_with_Activity.this, M_F_party_prod_Activity.class);
+                //건너갈 액티비티를 정해둔 인텐트 객체 선언
+                startActivity(intent);
+                overridePendingTransition(R.anim.l_f_act_chg_slide_right_enter,R.anim.l_f_act_chg_slide_right_exit);
+               /* FragmentManager fm1 = getSupportFragmentManager();
+                FragmentTransaction ft1 = fm1.beginTransaction();
+                ft1.replace(R.id.fragmentFrame, fragmentWith);
+                ft1.commit();*/
+            }
+        });
+
+
     }
 
 

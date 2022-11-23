@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,15 +10,25 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:id="@+id/create_btn_with">dd</Button>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" 같이먹는 페이지 입니둥~!"
         android:textSize="50sp"
         android:layout_gravity="center"/>
-    <ListView
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ListView
         android:id="@+id/M_V_board_with_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></ListView>
+        </ScrollView>
     </FrameLayout>
 </LinearLayout>
