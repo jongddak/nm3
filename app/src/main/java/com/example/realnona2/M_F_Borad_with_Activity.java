@@ -41,8 +41,7 @@ import android.widget.TextView;
 
 public class M_F_Borad_with_Activity extends AppCompatActivity {
 
-    private FragmentWith fragmentWith;
-    private FragmentShare fragmentShare;
+
     private Animation fab_open, fab_close,fab_oanim,fab_canim;
     private Boolean isFabOpen = false;
     private FloatingActionButton fab, fab1, fab2;
@@ -60,18 +59,12 @@ public class M_F_Borad_with_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.m_f_borad_with_activity);
 
-        create_btn_with = findViewById(R.id.create_btn_with);
-
         M_V_board_with_list =(ListView)findViewById(R.id.M_V_board_with_list);
 
         MyAdapter adapter=new MyAdapter(this,mTitle,mDescription,images);
         M_V_board_with_list.setAdapter(adapter);//리스트에 어뎁터 설정
 
-        fragmentWith = new FragmentWith();
-        FragmentManager fm1 = getSupportFragmentManager();
-        FragmentTransaction ft1 = fm1.beginTransaction();
-        ft1.replace(R.id.fragmentFrame, fragmentWith);
-        ft1.commit();
+
         Toolbar toolbar = findViewById (R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -203,13 +196,7 @@ public class M_F_Borad_with_Activity extends AppCompatActivity {
         overridePendingTransition(R.anim.l_f_act_chg_slide_right_enter,R.anim.l_f_act_chg_slide_right_exit);
     }
 
-    private void fram() {
-        fragmentShare = new FragmentShare();
-        FragmentManager fm1 = getSupportFragmentManager();
-        FragmentTransaction ft1 = fm1.beginTransaction();
-        ft1.replace(R.id.fragmentFrame, fragmentShare);
-        ft1.commit();
-    }
+
 
     private void alert() {
         AlertDialog.Builder builder= new AlertDialog.Builder(this);

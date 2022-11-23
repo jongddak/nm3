@@ -71,7 +71,9 @@
             android:name=".test_settingActivity"
             android:exported="false" />
 
-
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="xaqn33xtu4"/>
     </application>
 
 </manifest>

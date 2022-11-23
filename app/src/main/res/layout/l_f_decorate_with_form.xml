@@ -7,12 +7,26 @@
     tools:context=".F_F_main_form_Activity">
     <!--같이 묵자 클릭시 뜨는 화면-->
     <!--java파일은 xml명과 동일한 녀석들-->
-    <include
-        layout="@layout/l_f_toolbar_with" />
-    <FrameLayout
-        android:id="@+id/fragmentFrame"
+
+
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/l_f_toolbar_with" />
+
+        <ListView
+            android:id="@+id/M_V_board_with_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+        </ListView>
+    </LinearLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
