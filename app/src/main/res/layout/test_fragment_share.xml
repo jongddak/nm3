@@ -9,14 +9,16 @@
     <!--java파일은 xml명과 동일한 녀석들-->
 
     <FrameLayout
+        android:id="@+id/fragmentFrame"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="노나먹는 페이지 입니둥~!"
-            android:textSize="50sp"
-            android:layout_gravity="center"/>
+        <ListView
+            android:id="@+id/M_V_board_shear_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+        </ListView>
 
     </FrameLayout>
 

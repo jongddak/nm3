@@ -1,5 +1,6 @@
 package com.example.realnona2;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,7 @@ public class F_F_Login_form_Activity extends AppCompatActivity {
 
     private EditText login_email, login_password;
     private Button login_button, join_button;
+    private Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,8 @@ public class F_F_Login_form_Activity extends AppCompatActivity {
 
         login_email = findViewById( R.id.login_email );
         login_password = findViewById( R.id.login_password );
+
+        mContext = this;
 
         join_button = findViewById( R.id.F_V_signup_btn);
         join_button.setOnClickListener( new View.OnClickListener() {
@@ -54,6 +58,8 @@ public class F_F_Login_form_Activity extends AppCompatActivity {
                             boolean success = jsonObject.getBoolean( "success" );
 
                             if(success) {//로그인 성공시
+
+                                Loginsave.setString(mContext, "succ", "succ"); // 로그인 성공시 값 저장
 
                                 String UserEmail = jsonObject.getString( "UserEmail" );
                                 String UserPwd = jsonObject.getString( "UserPwd" );

@@ -20,7 +20,7 @@
         android:text="너나묵자"
         android:fontFamily="@font/l_f_binggraebold"
         android:textColor="@color/white"
-        android:transitionName="nonatxTransition"
+        android:transitionName="L_V_share_txTransition"
         android:textSize="35sp"
         android:gravity="center"
         android:layout_gravity="center"/>

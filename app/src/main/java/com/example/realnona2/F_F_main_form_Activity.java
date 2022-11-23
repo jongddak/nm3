@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActivityOptions;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +30,8 @@ public class F_F_main_form_Activity extends AppCompatActivity implements View.On
     private TextView F_V_main_share_tx, F_V_main_with_tx;
     private FragmentShare fragmentShare;
     private FragmentWith fragmentWith;
+    private Button Logout;
+    private Context mContext;
 
    /* private WebView webView;*/
    /* private String url = "https://m.naver.com";*/
@@ -44,10 +48,14 @@ public class F_F_main_form_Activity extends AppCompatActivity implements View.On
         F_V_main_share_tx =findViewById(R.id.F_V_main_share_tx);
         F_V_main_with_tx = findViewById(R.id.F_V_main_with_tx);
 
+
+        Logout = findViewById(R.id.Logout);
+        mContext = this;
+
         F_V_main_share_tx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(F_F_main_form_Activity.this, M_F_Borad_share_Activity.class);
+                Intent intent = new Intent(F_F_main_form_Activity.this, test_ShareActivity.class);
                 //건너갈 액티비티를 정해둔 인텐트 객체 선언
 
                 Pair[] pairs = new Pair[1];
@@ -66,11 +74,26 @@ public class F_F_main_form_Activity extends AppCompatActivity implements View.On
             }
         });
 
+        Logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Loginsave.clear(mContext);
+
+                Toast.makeText( getApplicationContext(), String.format("로그아웃 되었습니당!"), Toast.LENGTH_SHORT ).show();
+                Intent intent3 = new Intent( F_F_main_form_Activity.this, F_F_Login_form_Activity.class );
+                startActivity( intent3 );
+
+
+
+            }
+        });
+
+
 
         F_V_main_with_tx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(F_F_main_form_Activity.this, M_F_Borad_with_Activity.class);
+                Intent intent = new Intent(F_F_main_form_Activity.this, test_WithActivity.class);
                 //건너갈 액티비티를 정해둔 인텐트 객체 선언
 
                 Pair[] pairs = new Pair[1];
@@ -158,9 +181,9 @@ public class F_F_main_form_Activity extends AppCompatActivity implements View.On
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        overridePendingTransition(R.anim.l_f_act_chg_slide_left_enter,R.anim.l_f_act_chg_slide_left_exit);
+    public void onBackPressed() {/*   super.onBackPressed();
+        overridePendingTransition(R.anim.l_f_act_chg_slide_left_enter,R.anim.l_f_act_chg_slide_left_exit);*/
+
     }
 
     private void next() {

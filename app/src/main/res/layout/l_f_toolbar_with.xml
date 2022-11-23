@@ -18,7 +18,8 @@
         android:background="#00ff0000"
         android:text="같이묵자"
         android:textColor="@color/white"
-        android:transitionName="withtxTransition"
+        android:fontFamily="@font/l_f_binggraebold"
+        android:transitionName="L_V_with_txTransition"
         android:textSize="35sp"
         android:gravity="center"
         android:layout_gravity="center"/>
