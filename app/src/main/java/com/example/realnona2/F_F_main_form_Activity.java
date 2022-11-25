@@ -30,8 +30,7 @@ public class F_F_main_form_Activity extends AppCompatActivity implements View.On
     private TextView F_V_main_share_tx, F_V_main_with_tx;
     private FragmentShare fragmentShare;
     private FragmentWith fragmentWith;
-    private Button Logout;
-    private Context mContext;
+
 
    /* private WebView webView;*/
    /* private String url = "https://m.naver.com";*/
@@ -49,8 +48,6 @@ public class F_F_main_form_Activity extends AppCompatActivity implements View.On
         F_V_main_with_tx = findViewById(R.id.F_V_main_with_tx);
 
 
-        Logout = findViewById(R.id.Logout);
-        mContext = this;
 
         F_V_main_share_tx.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,19 +71,7 @@ public class F_F_main_form_Activity extends AppCompatActivity implements View.On
             }
         });
 
-        Logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Loginsave.clear(mContext);
 
-                Toast.makeText( getApplicationContext(), String.format("로그아웃 되었습니당!"), Toast.LENGTH_SHORT ).show();
-                Intent intent3 = new Intent( F_F_main_form_Activity.this, F_F_Login_form_Activity.class );
-                startActivity( intent3 );
-
-
-
-            }
-        });
 
 
 
