@@ -1,5 +1,6 @@
 package com.example.realnona2;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -81,6 +82,7 @@ public class F_F_Login_form_Activity extends AppCompatActivity {
 
                                 startActivity( intent );
                                /* startActivity(intent2);*/
+
 
                             } else {//로그인 실패시
                                 Toast.makeText( getApplicationContext(), "로그인에 실패하셨습니다.", Toast.LENGTH_SHORT ).show();
