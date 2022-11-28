@@ -6,7 +6,7 @@
     android:id="@+id/toolbar"
     app:title="."
     app:titleTextColor="#00FFFFFF"
-    android:background="#b09cdd"
+    android:background="#8b00ff"
     android:elevation="30dp"
     app:menu="@menu/l_f_menu_toolbar">
     <!--같이묵자 툴바-->

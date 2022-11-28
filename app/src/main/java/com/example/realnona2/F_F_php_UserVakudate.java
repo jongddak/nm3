@@ -9,14 +9,14 @@ import java.util.Map;
 
 public class F_F_php_UserVakudate extends StringRequest {
     //서버 url 설정(php파일 연동)
-    final static  private String URL="http://nonaphp.dothome.co.kr/UserValidate.php";
+    final static  private String URL="http://nonaphp.dothome.co.kr/UserValidate1.php";
     private final Map<String, String> map;
 
-    public F_F_php_UserVakudate(String UserEmail, Response.Listener<String> listener){
+    public F_F_php_UserVakudate(String UserNum, Response.Listener<String> listener){
         super(Method.POST, URL, listener,null);
 
         map = new HashMap<>();
-        map.put("UserEmail", UserEmail);
+        map.put("UserNum", UserNum);
     }
 
     @Override

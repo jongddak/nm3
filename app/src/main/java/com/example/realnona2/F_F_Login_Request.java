@@ -11,14 +11,14 @@ import java.util.Map;
 public class F_F_Login_Request extends StringRequest {
 
     //서버 URL 설정(php 파일 연동)
-    final static private String URL = "http://nonaphp.dothome.co.kr/Login.php";
+    final static private String URL = "http://nonaphp.dothome.co.kr/Login2.php";
     private Map<String, String> map;
 
-    public F_F_Login_Request(String UserEmail, String UserPwd, Response.Listener<String> listener) {
+    public F_F_Login_Request(String UserNum, String UserPwd, Response.Listener<String> listener) {
         super(Method.POST, URL, listener, null);
 
         map = new HashMap<>();
-        map.put("UserEmail", UserEmail);
+        map.put("UserNum", UserNum);
         map.put("UserPwd", UserPwd);
     }
 

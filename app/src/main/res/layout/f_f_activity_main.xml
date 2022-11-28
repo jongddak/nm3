@@ -49,12 +49,6 @@
             android:textSize="35sp"
             android:transitionName="L_V_with_txTransition" />
 
-        <Button
-
-            android:id="@+id/Logout"
-            android:layout_width="146dp"
-            android:layout_height="wrap_content"
-            android:text="로그아웃" />
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -1,5 +1,6 @@
 package com.example.realnona2;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -47,7 +48,7 @@ public class F_F_Login_form_Activity extends AppCompatActivity {
         login_button.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String UserEmail = login_email.getText().toString();
+                String UserNum = login_email.getText().toString();
                 String UserPwd = login_password.getText().toString();
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
@@ -61,18 +62,27 @@ public class F_F_Login_form_Activity extends AppCompatActivity {
 
                                 Loginsave.setString(mContext, "succ", "succ"); // 로그인 성공시 값 저장
 
-                                String UserEmail = jsonObject.getString( "UserEmail" );
+                                String UserNum = jsonObject.getString( "UserNum" );
                                 String UserPwd = jsonObject.getString( "UserPwd" );
                                 String UserName = jsonObject.getString( "UserName" );
+                                String UserClass = jsonObject.getString( "UserClass" );
+                                String UserSex = jsonObject.getString( "UserSex" );
 
                                 Toast.makeText( getApplicationContext(), String.format("%s님 환영합니다.", UserName), Toast.LENGTH_SHORT ).show();
                                 Intent intent = new Intent( F_F_Login_form_Activity.this, F_F_main_form_Activity.class );
 
-                                intent.putExtra( "UserEmail", UserEmail );
-                                intent.putExtra( "UserPwd", UserPwd );
-                                intent.putExtra( "UserName", UserName );
+                                Intent intent2 = new Intent(F_F_Login_form_Activity.this,test_userActivity.class);
+
+                                intent2.putExtra( "UserNum", UserNum );
+                                intent2.putExtra( "UserPwd", UserPwd );
+                                intent2.putExtra( "UserName", UserName );
+                                intent2.putExtra( "UserClass", UserClass );
+                                intent2.putExtra( "UserSex", UserSex );
+
 
                                 startActivity( intent );
+                               /* startActivity(intent2);*/
+
 
                             } else {//로그인 실패시
                                 Toast.makeText( getApplicationContext(), "로그인에 실패하셨습니다.", Toast.LENGTH_SHORT ).show();
@@ -84,7 +94,7 @@ public class F_F_Login_form_Activity extends AppCompatActivity {
                         }
                     }
                 };
-                F_F_Login_Request FFLoginRequest = new F_F_Login_Request( UserEmail, UserPwd, responseListener );
+                F_F_Login_Request FFLoginRequest = new F_F_Login_Request( UserNum, UserPwd, responseListener );
                 RequestQueue queue = Volley.newRequestQueue( F_F_Login_form_Activity.this );
                 queue.add(FFLoginRequest);
 
