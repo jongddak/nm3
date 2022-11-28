@@ -68,6 +68,12 @@ public class F_F_Login_form_Activity extends AppCompatActivity {
                                 String UserClass = jsonObject.getString( "UserClass" );
                                 String UserSex = jsonObject.getString( "UserSex" );
 
+                                Loginsave.setString(mContext,"UserNum",UserNum);
+                                Loginsave.setString(mContext,"UserName",UserName);
+                                Loginsave.setString(mContext,"UserClass",UserClass);
+                                Loginsave.setString(mContext,"UserSex",UserSex);
+
+
                                 Toast.makeText( getApplicationContext(), String.format("%s님 환영합니다.", UserName), Toast.LENGTH_SHORT ).show();
                                 Intent intent = new Intent( F_F_Login_form_Activity.this, F_F_main_form_Activity.class );
 

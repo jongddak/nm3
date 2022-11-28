@@ -32,27 +32,33 @@ public class test_userActivity extends AppCompatActivity {
         mContext = this;
 
         Logout = findViewById(R.id.Logout);
+
+        String Userdata1 = Loginsave.getString(mContext,"UserNum");
+        String Userdata2 = Loginsave.getString(mContext,"UserName");
+        String Userdata3 = Loginsave.getString(mContext,"UserClass");
+        String Userdata4 = Loginsave.getString(mContext,"UserSex");
+        /*
         Intent intent = getIntent();
         final String data1 = intent.getStringExtra("UserNum");
         final String data2 = intent.getStringExtra("UserName");
         final String data3 = intent.getStringExtra("UserClass");
         final String data4 = intent.getStringExtra("UserSex");
-
+*/
         testbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                UserinfoNum.setText(data1);
-                UserinfoName.setText(data2);
-                UserinfoClass.setText(data3);
-                UserinfoSex.setText(data4);
+                UserinfoNum.setText(Userdata1);
+                UserinfoName.setText(Userdata2);
+                UserinfoClass.setText(Userdata3);
+                UserinfoSex.setText(Userdata4);
 
             }
         });
 
-        UserinfoNum.setText(data1);
-        UserinfoName.setText(data2);
-        UserinfoClass.setText(data3);
-        UserinfoSex.setText(data4);
+        UserinfoNum.setText(Userdata1);
+        UserinfoName.setText(Userdata2);
+        UserinfoClass.setText(Userdata3);
+        UserinfoSex.setText(Userdata4);
 
 
 
