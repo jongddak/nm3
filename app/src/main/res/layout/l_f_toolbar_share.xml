@@ -23,7 +23,7 @@
         android:transitionName="L_V_share_txTransition"
         android:textSize="35sp"
         android:gravity="center"
-        android:layout_gravity="center"/>
+        android:layout_gravity="left"/>
     <!--android:includeFontPadding="false"-->
     <!--background를 투명하게 하면 애니매이션이 자세히 안나옴.-->
 </androidx.appcompat.widget.Toolbar>
