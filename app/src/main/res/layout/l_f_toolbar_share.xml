@@ -7,7 +7,7 @@
     app:title="."
     android:elevation="30dp"
     app:titleTextColor="#00FFFFFF"
-    android:background="#b09cdd"
+    android:background="#9370db"
     app:menu="@menu/l_f_menu_toolbar">
     <!--너나묵자 툴바-->
     <!--java파일은 xml명과 동일한 녀석들-->

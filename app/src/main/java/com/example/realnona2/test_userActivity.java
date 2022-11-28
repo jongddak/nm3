@@ -16,6 +16,9 @@ public class test_userActivity extends AppCompatActivity {
     private Context mContext;
 
 
+    /*회원가입 페이지로 정보 보낼려면 겟셋 두번 하기 or 한번에 보내주는 법 찾기 */
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
