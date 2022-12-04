@@ -10,12 +10,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="82dp"
-        android:gravity="center">
+        android:gravity="center"
+        >
 
         <TextView
-
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:fontFamily="@font/l_f_binggraebold"
             android:gravity="center"
             android:text="회원가입"
@@ -32,101 +32,100 @@
         android:gravity="center"
         android:orientation="vertical">
 
+
+        <!--  <LinearLayout
+              android:layout_width="291dp"
+              android:layout_height="35dp"
+              android:orientation="horizontal"
+              android:layout_marginTop="20dp">
+
+              <TextView
+                  android:layout_width="65dp"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/l_f_binggraebold"
+                  android:text=" 과 선택"
+                  android:textSize="15dp"></TextView>
+
+              <Spinner
+                  android:id="@+id/spinner"
+                  android:layout_width="125dp"
+                  android:layout_height="21dp"></Spinner>
+
+
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:layout_width="240dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <RadioGroup
+                  android:id="@+id/radiogroup"
+                  android:layout_width="166dp"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal">
+
+                  <RadioButton
+                      android:id="@+id/radioButton1"
+                      android:layout_width="40dp"
+                      android:layout_height="23dp"
+                      android:layout_weight="1"
+                      android:text="남" />
+
+                  <RadioButton
+                      android:id="@+id/radioButton2"
+                      android:layout_width="40dp"
+                      android:layout_height="23dp"
+                      android:layout_weight="1"
+                      android:text="여" />
+
+
+              </RadioGroup>
+
+
+          </LinearLayout>
+          -->
+
         <EditText
             android:id="@+id/userName"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
             android:layout_marginEnd="2dp"
             android:layout_marginBottom="16dp"
             android:ems="10"
             android:fontFamily="@font/l_f_binggraebold"
-            android:hint="이름"
+            android:hint="이름 "
             android:inputType="textPersonName" />
 
         <LinearLayout
-            android:layout_width="273dp"
-            android:layout_height="47dp"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center">
 
             <EditText
                 android:id="@+id/userNum"
-                android:layout_width="174dp"
-                android:layout_height="47dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginBottom="30dp"
-                android:ems="10"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:ems="8"
                 android:fontFamily="@font/l_f_binggraebold"
                 android:gravity="left"
-                android:hint="학번"
-                />
+                android:hint="학번" />
 
             <Button
-                android:id="@+id/check_button"
-                android:layout_width="85dp"
-                android:layout_height="48dp"
-                android:layout_marginEnd="100dp"
-                android:text="확인"
-                android:textColor="@android:color/black"
-                />
-
-
-        </LinearLayout>
-
-
-      <!--  <LinearLayout
-            android:layout_width="291dp"
-            android:layout_height="35dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp">
-
-            <TextView
-                android:layout_width="65dp"
-                android:layout_height="wrap_content"
                 android:fontFamily="@font/l_f_binggraebold"
-                android:text=" 과 선택"
-                android:textSize="15dp"></TextView>
-
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="125dp"
-                android:layout_height="21dp"></Spinner>
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioGroup
-                android:id="@+id/radiogroup"
-                android:layout_width="166dp"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/radioButton1"
-                    android:layout_width="40dp"
-                    android:layout_height="23dp"
-                    android:layout_weight="1"
-                    android:text="남" />
-
-                <RadioButton
-                    android:id="@+id/radioButton2"
-                    android:layout_width="40dp"
-                    android:layout_height="23dp"
-                    android:layout_weight="1"
-                    android:text="여" />
-
-
-            </RadioGroup>
+                android:id="@+id/check_button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:text="확인"
+                android:backgroundTint="#9370db"
+                android:textColor="@android:color/white" />
 
 
         </LinearLayout>
-        -->
+
         <EditText
             android:id="@+id/userClass"
             android:layout_width="286dp"
@@ -134,10 +133,10 @@
             android:layout_margin="20dp"
             android:layout_marginStart="8dp"
             android:layout_marginBottom="10dp"
-            android:ems="10"
+            android:ems="15"
             android:fontFamily="@font/l_f_binggraebold"
-            android:hint="과"
-             />
+            android:hint="과" />
+
         <EditText
             android:id="@+id/userSex"
             android:layout_width="286dp"
@@ -147,8 +146,7 @@
             android:layout_marginBottom="20dp"
             android:ems="10"
             android:fontFamily="@font/l_f_binggraebold"
-            android:hint="성별"
-             />
+            android:hint="성별" />
 
 
         <EditText
@@ -173,26 +171,30 @@
             android:inputType="textPassword" />
 
         <LinearLayout
-            android:layout_width="411dp"
+            android:layout_width="394dp"
             android:layout_height="103dp"
             android:gravity="center"
             android:orientation="horizontal">
 
             <Button
+                android:fontFamily="@font/l_f_binggraebold"
+                android:backgroundTint="#9370db"
                 android:id="@+id/signup_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
                 android:text="가입"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/white" />
 
             <Button
+                android:fontFamily="@font/l_f_binggraebold"
                 android:id="@+id/delete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="취소"
-                android:textColor="@android:color/black" />
+                android:backgroundTint="#9370db"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
 

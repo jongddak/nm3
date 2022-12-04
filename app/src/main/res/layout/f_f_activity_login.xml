@@ -9,24 +9,29 @@
 
     <Button
         android:id="@+id/login_button"
-        style="@style/defaultButton"
+        android:fontFamily="@font/l_f_binggraebold"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#9370db"
         android:text="로그인"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         app:layout_constraintBaseline_toBaselineOf="@+id/F_V_signup_btn"
-        app:layout_constraintStart_toStartOf="@+id/login_password" />
+        app:layout_constraintStart_toStartOf="@+id/login_password"
+        />
 
     <EditText
         android:id="@+id/login_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="41dp"
+        android:layout_marginBottom="40dp"
         android:ems="10"
-        android:hint="아이디"
-        android:inputType="textEmailAddress"
+        android:hint="학번"
+        android:textColorHint="#6441a5"
+        android:backgroundTint="#6441a5"
         app:layout_constraintBottom_toTopOf="@+id/login_password"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -36,29 +41,34 @@
         android:layout_marginBottom="41dp"
         android:ems="10"
         android:hint="비밀번호"
+        android:textColorHint="#6441a5"
+        android:backgroundTint="#6441a5"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/login_button"
         app:layout_constraintStart_toStartOf="@+id/login_email" />
 
+
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="41dp"
+        android:layout_width="105dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/load2"
         app:layout_constraintBottom_toTopOf="@+id/login_email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:tint="@color/colorAccent" />
-
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/F_V_signup_btn"
-        style="@style/defaultButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="190dp"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#9370db"
+        android:fontFamily="@font/l_f_binggraebold"
         android:text="가입"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/login_password" />
 

@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".F_F_main_form_Activity"
-    android:background="#b09cdd">
+    >
+    <!--android:background=""-->
+
     <!--d6bbff,e5c9f8,b09cdd-->
 <!--홈 화면-->
     <!--java파일은 xml명과 동일한 녀석들-->
@@ -29,7 +31,7 @@
             android:gravity="center"
             android:fontFamily="@font/l_f_binggraebold"
             android:text="너나묵자"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/white"
             android:textSize="35sp"
             android:transitionName="L_V_share_txTransition" />
 
@@ -45,7 +47,7 @@
             android:gravity="center"
 
             android:text="같이묵자"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/white"
             android:textSize="35sp"
             android:transitionName="L_V_with_txTransition" />
 
