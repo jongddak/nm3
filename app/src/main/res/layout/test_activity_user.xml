@@ -12,16 +12,16 @@
     <!--java파일은 xml명과 동일한 녀석들-->
     <LinearLayout
         android:layout_width="300dp"
-        android:layout_height="450dp"
+        android:layout_height="400dp"
         android:layout_gravity="center"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="110dp"
         android:background="@drawable/l_f_round_adg_white"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="80dp"
             android:layout_gravity="center"
             android:orientation="horizontal">
 
