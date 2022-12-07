@@ -134,7 +134,7 @@
             android:layout_marginRight="50dp"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="로그아웃"
+            android:text="로그아웃 "
             android:textSize="15sp"
             android:fontFamily="@font/l_f_binggraebold"/>
         <Button
