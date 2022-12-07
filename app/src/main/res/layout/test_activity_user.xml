@@ -21,21 +21,21 @@
         <LinearLayout
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="70dp"
                 android:layout_height="47dp"
                 android:fontFamily="@font/l_f_binggraebold"
                 android:gravity="center"
                 android:text="학번 :  "
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/UserinfoNum"
-                android:layout_width="250dp"
+                android:layout_width="109dp"
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="25sp" />
@@ -44,23 +44,23 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="350dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="70dp"
                 android:layout_height="47dp"
                 android:fontFamily="@font/l_f_binggraebold"
                 android:gravity="center"
                 android:text="이름 :  "
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/UserinfoName"
-                android:layout_width="250dp"
+                android:layout_width="109dp"
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="25sp" />
@@ -69,10 +69,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="350dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <TextView
@@ -81,11 +81,11 @@
                 android:fontFamily="@font/l_f_binggraebold"
                 android:gravity="center"
                 android:text="학과 :  "
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/UserinfoClass"
-                android:layout_width="250dp"
+                android:layout_width="109dp"
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="25sp" />
@@ -95,10 +95,10 @@
 
 
         <LinearLayout
-            android:layout_width="350dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <TextView
@@ -107,11 +107,11 @@
                 android:fontFamily="@font/l_f_binggraebold"
                 android:gravity="center"
                 android:text="성별 :  "
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/UserinfoSex"
-                android:layout_width="250dp"
+                android:layout_width="109dp"
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="25sp" />
@@ -128,6 +128,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center">
         <Button
+            android:id="@+id/Logout"
             android:backgroundTint="#6441a5"
             android:layout_marginTop="20dp"
             android:layout_marginRight="50dp"
@@ -137,6 +138,7 @@
             android:textSize="15sp"
             android:fontFamily="@font/l_f_binggraebold"/>
         <Button
+            android:id="@+id/testbtn"
             android:text="회원탈퇴"
             android:textSize="15sp"
             android:fontFamily="@font/l_f_binggraebold"
@@ -150,170 +152,4 @@
 
 </LinearLayout>
 
-<!--
-<LinearLayout
-android:layout_width="wrap_content"
-android:layout_height="wrap_content">
 
-</LinearLayout>
-
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="648dp"
-android:gravity="center"
-android:orientation="vertical">
-
-<ImageView
-    android:layout_width="130dp"
-    android:layout_height="130dp"
-    android:layout_gravity="center"
-    android:layout_marginBottom="15dp"
-    android:background="@drawable/purpleuser"
-    android:scaleType="fitXY" />
-
-<LinearLayout
-    android:layout_width="350dp"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:background="@drawable/l_f_round_adg_purple"
-    android:gravity="center"
-    android:orientation="horizontal">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:fontFamily="@font/l_f_binggraebold"
-        android:gravity="center"
-        android:text="학번 :  "
-        android:textSize="25sp" />
-
-    <TextView
-        android:id="@+id/UserinfoNum"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="25sp" />
-
-
-</LinearLayout>
-
-<LinearLayout
-    android:layout_width="350dp"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:background="@drawable/l_f_round_adg_purple"
-    android:gravity="center"
-    android:orientation="horizontal">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:fontFamily="@font/l_f_binggraebold"
-        android:gravity="center"
-        android:text="이름 :  "
-        android:textSize="25sp" />
-
-    <TextView
-        android:id="@+id/UserinfoName"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="25sp" />
-
-
-</LinearLayout>
-
-<LinearLayout
-    android:layout_width="350dp"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:background="@drawable/l_f_round_adg_purple"
-    android:gravity="center"
-    android:orientation="horizontal">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:fontFamily="@font/l_f_binggraebold"
-        android:gravity="center"
-        android:text="학과 :  "
-        android:textSize="25sp" />
-
-    <TextView
-        android:id="@+id/UserinfoClass"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="25sp" />
-
-
-</LinearLayout>
-
-
-<LinearLayout
-    android:layout_width="350dp"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:background="@drawable/l_f_round_adg_purple"
-    android:gravity="center"
-    android:orientation="horizontal">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:fontFamily="@font/l_f_binggraebold"
-        android:gravity="center"
-        android:text="성별 :  "
-        android:textSize="25sp" />
-
-    <TextView
-        android:id="@+id/UserinfoSex"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="25sp" />
-
-
-</LinearLayout>
-
-
-<LinearLayout
-    android:layout_width="122dp"
-    android:layout_height="80dp">
-
-</LinearLayout>
-
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:orientation="horizontal">
-
-    <Button
-        android:id="@+id/Logout"
-        android:layout_width="100dp"
-        android:layout_height="55dp"
-        android:layout_marginRight="20dp"
-        android:backgroundTint="#9370db"
-        android:fontFamily="@font/l_f_binggraebold"
-        android:text="로그아웃">
-
-    </Button>
-
-    <Button
-        android:id="@+id/testbtn"
-        android:layout_width="100dp"
-        android:layout_height="55dp"
-        android:layout_marginLeft="20dp"
-        android:backgroundTint="#9370db"
-        android:fontFamily="@font/l_f_binggraebold"
-        android:text="회원탈퇴">
-
-    </Button>
-
-
-</LinearLayout>
-
-
-</LinearLayout>-->
