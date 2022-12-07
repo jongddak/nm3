@@ -7,7 +7,7 @@
     app:title="."
     android:elevation="30dp"
     app:titleTextColor="#00FFFFFF"
-    android:background="#9370db"
+    android:background="@drawable/l_f_round_adg_purple2"
     app:menu="@menu/l_f_menu_toolbar">
     <!--너나묵자 툴바-->
     <!--java파일은 xml명과 동일한 녀석들-->
@@ -16,7 +16,7 @@
         android:id="@+id/F_V_main_share_tx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#9370db"
+        android:background="#00ff0000"
         android:text="너나묵자"
         android:fontFamily="@font/l_f_binggraebold"
         android:textColor="@color/white"
