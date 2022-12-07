@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="15sp"
-        android:backgroundTint="#F783DAD6"
+        android:backgroundTint="#9370db"
         android:src="@drawable/l_f_icon_add"
         />
 

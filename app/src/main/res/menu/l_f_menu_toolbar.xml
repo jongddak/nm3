@@ -8,7 +8,8 @@
         android:enabled="true"
         android:title="메뉴1"
         android:icon="@drawable/l_f_icon_home"
-        app:showAsAction="always"/>
+        app:showAsAction="always"
+        />
 
     <item
         android:id="@+id/item2"
