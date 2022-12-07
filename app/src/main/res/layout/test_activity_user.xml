@@ -139,7 +139,7 @@
             android:fontFamily="@font/l_f_binggraebold"/>
         <Button
             android:id="@+id/testbtn"
-            android:text="회원탈퇴"
+            android:text="회원탈퇴 "
             android:textSize="15sp"
             android:fontFamily="@font/l_f_binggraebold"
             android:layout_marginTop="20dp"
